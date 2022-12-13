@@ -32,6 +32,8 @@ app.post("/api", (req, res) => {
   res.send(`your risk raiting is ${counter}`);
 });
 
-app.listen("8000", () => {
-  console.log("app is running on port 8000");
+const port = process.env.port || 3000;
+
+app.listen(port, () => {
+  console.log(`app is running on ${port}`);
 });
