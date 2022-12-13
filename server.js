@@ -27,6 +27,10 @@ function wordCounter(data) {
   return `${counter}`;
 }
 
+app.get('/' (req,res) => {
+  res.send('Welcome to the home page')
+})
+
 app.post("/api", (req, res) => {
   wordCounter(toString(req.body));
   res.send(`your risk raiting is ${counter}`);
